@@ -1,6 +1,6 @@
 # 🚀 Admin - Get Started
 
-![https://gardenlab.io/assets/img/Logo.svg](https://gardenlab.io/assets/img/Logo.svg)
+<figure><img src=".gitbook/assets/logo-white.png" alt=""><figcaption></figcaption></figure>
 
 ## Gardenlab in a Few Words
 
@@ -18,7 +18,7 @@ Creating your program and NFT collections will initially go through our services
 
 📺 Watch the illustrative video:
 
-[Modifier les détails de sa collection](https://www.notion.so/Modifier-les-d-tails-de-sa-collection-888ce6bbb82e4686be619d4f602798e5)
+[#modify-collection-details](admin-get-started.md#modify-collection-details "mention")
 
 ## Define Your Club Card Benefits and Access
 
@@ -34,7 +34,7 @@ The information will then be on the NFT page of the holders.
 
 📺 Watch the illustrative video:
 
-[Créer une campagne de scan (avantage)](https://www.notion.so/Cr-er-une-campagne-de-scan-avantage-c14619a9f7f446edb2de6a33eab70656)
+[#create-a-scan-campaign-advantage](admin-get-started.md#create-a-scan-campaign-advantage "mention")
 
 ## Managing Your Interaction with QR Codes
 
@@ -48,7 +48,7 @@ To evolve a membership card, simply generate a QR code for the program directly 
 
 📺 Watch the illustrative video:
 
-[Créer une interaction pour faire évoluer les NFT](https://www.notion.so/Cr-er-une-interaction-pour-faire-voluer-les-NFT-6b38d13c310142b1b91088a85e271325)
+[#create-an-interaction-to-evolve-nfts](admin-get-started.md#create-an-interaction-to-evolve-nfts "mention")
 
 ## Use Customer Data to Personalize/Gamify Your Benefits and Track Your Customer Journey (According to CRM)
 
@@ -58,7 +58,7 @@ Using Gardenlab also means easy and quick access to statistics from your collect
 
 📺 Watch the illustrative video:
 
-[Voir les statistiques de sa collection (scans et interactions)](https://www.notion.so/Voir-les-statistiques-de-sa-collection-scans-et-interactions-80d8ec45a38d4e849c9fde63a919aa46)
+[#view-collection-statistics-scans-and-interactions](admin-get-started.md#view-collection-statistics-scans-and-interactions "mention")
 
 ***
 
@@ -66,16 +66,16 @@ Using Gardenlab also means easy and quick access to statistics from your collect
 
 ### Modify Collection Details
 
-[https://drive.google.com/file/d/12Z\_03VjOeAs0VIkw362UMyYzNx0pTPvn/preview](https://drive.google.com/file/d/12Z\_03VjOeAs0VIkw362UMyYzNx0pTPvn/preview)
+{% embed url="https://drive.google.com/file/d/12Z_03VjOeAs0VIkw362UMyYzNx0pTPvn/preview" %}
 
 ### Create an Interaction to Evolve NFTs
 
-[https://drive.google.com/file/d/1PBLxFfLeHw1pXl\_n27g9AECMDoxhIBQ6/preview](https://drive.google.com/file/d/1PBLxFfLeHw1pXl\_n27g9AECMDoxhIBQ6/preview)
+{% embed url="https://drive.google.com/file/d/1PBLxFfLeHw1pXl_n27g9AECMDoxhIBQ6/preview" %}
 
 ### Create a Scan Campaign (Advantage)
 
-[https://drive.google.com/file/d/1nxt3ZjjtuWVqnqui7IM6uEN0pua5l1TG/preview](https://drive.google.com/file/d/1nxt3ZjjtuWVqnqui7IM6uEN0pua5l1TG/preview)
+{% embed url="https://drive.google.com/file/d/1nxt3ZjjtuWVqnqui7IM6uEN0pua5l1TG/preview" %}
 
 ### View Collection Statistics (Scans and Interactions)
 
-[https://drive.google.com/file/d/1Q-ysoruNhrIdxBvkT1naAr2nFRpXodzs/preview](https://drive.google.com/file/d/1Q-ysoruNhrIdxBvkT1naAr2nFRpXodzs/preview)
+{% embed url="https://drive.google.com/file/d/1Q-ysoruNhrIdxBvkT1naAr2nFRpXodzs/preview" %}

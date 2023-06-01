@@ -6,13 +6,13 @@ Gardenlab is a technology company that provides services related to Non-fungible
 
 Our aim is to enhance user retention and loyalty thanks to an advanced product that allow companies to generate and manage NFT Membership cards. The main innovation is the use of dynamic NFTs (dNFT).
 
-We also provide an internal NFT marketplace in order to support the secondary market.
+We will also provide an internal NFT marketplace in order to support the secondary market.
 
-<mark style="color:purple;">It is time to build a new and sincere loyalty in which :</mark>
+It is time to build a new and sincere loyalty in which :
 
-* <mark style="color:purple;">Your community feels valued and recognised,</mark>
-* <mark style="color:purple;">Your community is engaged and involved,</mark>
-* <mark style="color:purple;">Your community stays loyal and talks about you.</mark>\
+* Your community feels valued and recognised,
+* Your community is engaged and involved,
+* Your community stays loyal and talks about you.\
 
 
 Our platform is currently based on the **Polygon network** <img src="broken-reference" alt="" data-size="line">. We are dedicated to the use of a blockchain with low fees, great security & infrastructure and a neutral carbon footprint.
