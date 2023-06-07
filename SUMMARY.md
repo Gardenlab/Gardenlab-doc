@@ -12,7 +12,7 @@
 ## 💫 Use cases
 
 * [Events](use-cases/events.md)
-* [Sport](use-cases/sport.md)
+* [Sport (Fan Experience)](use-cases/sport-fan-experience.md)
 
 ## 👨💻 API
 
