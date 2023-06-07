@@ -1,75 +1,78 @@
 ---
-description: What is a NFT ?
+description: Voici une introduction concernant les NFTs.
 ---
 
 # NFT
 
-## ❓ What is an NFT in concrete terms?
+## ❓ Un NFT c'est quoi concrètement ?
 
-💠 It is simply a digital token bound by a contract of authenticity, a non-tangible asset that has its own value and its own owner.
+💠 C'est tout simplement un jeton numérique lié par un contrat d'authenticité, un bien non tangible qui possède sa propre valeur ainsi que son propre propriétaire.&#x20;
 
-💠 They use Blockchain technology, the most famous of which are: Ethereum, Polygon, Solana...&#x20;
+💠 Ils utilisent la technologie Blockchain dont les plus connues sont : Ethereum, Polygon, Solana...&#x20;
 
-💠 The latter is purchased via cryptocurrency on platforms that are called Marketplace like Gardenlab, for example, and which are distinguished into 2 categories:
+💠 Ce dernier s'achète via de la cryptomonnaie sur des plateformes qu'on appelle Marketplace comme Gardenlab, par exemple, et qui se distinguent en 2 catégories:
 
 {% hint style="success" %}
 NFT: Jeton Non Fongible / Non Fungible Token
 {% endhint %}
 
-### 🎨  1. Those without benefits, from the art:
+### 🎨  1. Ceux sans avantages, de l'art:
 
-An NFT can be simply an artistic creation, as one could compare it to a painting or a sculpture. It gains or loses value depending on who created it, how famous it is, etc.&#x20;
+Un NFT peut être tout simplement une création artistique, comme on pourrait le comparer à un tableau ou une sculpture. Il prend ou perd de la valeur en fonction de qui l'a créé, de la notoriété etc...&#x20;
 
 {% hint style="success" %}
-The most famous in the field are the Cryptopunks.
+Les plus connus dans le domaine sont les Cryptopunks.
 {% endhint %}
 
-### 🎫  2. Those with advantage(s), utilities:
+![](broken-reference)
 
-An NFT is an exchangeable asset that allows, thanks to the blockchain and its principle of transparency, to provide benefits to holders in real time such as:
+### 🎫  2. Ceux avec avantage(s), des utilitaires:
 
-💠 An access to IRL events (boat party, concert place etc...)&#x20;
+Un NFT est un actif échangeable qui permet, grâce à la blockchain et son principe de transparence, de procurer des avantages aux détenteurs en temps réel tels que :
 
-💠 An automated passive income system in cryptocurrency&#x20;
+💠 Un accès à des événements IRL (boat party, place de concert etc...)
 
-💠 The possibility to receive NFTs&#x20;
+💠 Un système de revenu passif automatisé en cryptomonnaie
 
-💠 And many more...\
+💠 La possibilité de recevoir des NFTs&#x20;
+
+💠 Et bien d'autres...\
 \
-As you can see, the possibilities are endless and only need to be found and developed. The benefits can be numerous, even unlimited and invaluable.
+Vous l'avez compris, les possibilités sont infinies et ne demandent qu'à être trouvées et développées. Les avantages peuvent être nombreux voire illimités et de valeurs inestimables.
 
 {% hint style="success" %}
-⚙️ Adding utility to NFTs is a technical challenge: we need to know how to leverage the blockchain with smart contracts. We're taking care of that part.
+⚙️ **Ajouter de l'utilité** aux NFTs est un défi technique : il faut savoir exploiter la blockchain grâce aux smart contracts. Nous nous occupons de cette partie.
 {% endhint %}
 
-### [🎓](https://emojipedia.org/graduation-cap/) Who can create an NFT? How can I do it?
+### [🎓](https://emojipedia.org/graduation-cap/) Qui peut créer un NFT ? Et comment ?
 
-Well, anyone can turn an illustration into an NFT, no coding knowledge is needed. Only your imagination and creativity are good assets.&#x20;
+Et bien tout le monde peut transformer une illustration en NFT, pas besoin de connaissances en codage. Seule votre imagination et votre créativité sont de bons atouts.
 
-💠 You can use an app like Procreate on a graphics tablet to draw and have it rendered directly in digital.&#x20;
+💠 Vous pouvez utiliser une application comme Procreate sur une tablette graphique afin de dessiner et d'avoir le rendu direct en numérique.
 
-💠 Do some editing with Photoshop, Illustrator or many other graphic design and creation software in 2D and/or 3D rendering.&#x20;
+💠 Faire du montage avec Photoshop, Illustrator ou bien d'autres logiciels de graphisme et création en rendu 2D et/ou 3D.
 
-💠 Or even hire a graphic designer to create your designs.&#x20;
+💠 Ou même recruter un graphiste qui s'occupera de vous créer vos designs.
 
-💠 When it comes to adding features to your NFTs so that they become more valuable, you can use Launchpad, we take care of the technical side.
+💠 Pour ce qui est d'ajouter des fonctionnalités à vos NFTs afin qu'ils prennent de la valeur, vous pouvez utiliser le [Launchpad](broken-reference), nous nous occupons du côté technique.
 
 {% hint style="danger" %}
-Of course it is not enough to go on a site, download an image and then sell it and earn millions. Copyrights are also present.
+Bien évidemment il ne suffit pas d'aller sur un site, de télécharger une image puis de la vendre et gagner des millions. Les droits d'auteur sont également présents.
 {% endhint %}
 
-### ✅  What are the advantages for the creator?
+### ✅  Côté créateur, quelles sont les avantages ?
 
-Thanks to the blockchain and its principle of transparency you can:&#x20;
+Grâce à la blockchain et son principe de transparence vous pouvez :
 
-💠 Each NFT has an ID and a holder, which allows you to anonymously and freely manage benefits without having to contact the holder.
+💠 Chaque NFT a une ID et un détenteur, ce qui permet de gérer anonymement et librement les avantages sans devoir contacter ce dernier.&#x20;
 
-💠 Offer or not offer benefits even if the NFT gets traded.&#x20;
+💠 Offrir ou non des avantages même si le NFT se fait échanger&#x20;
 
-💠 Management of Smarts Contracts (Smart Contracts) that allow you to remove all intermediaries by automating actions and/or conditions.&#x20;
+💠 Gestion de Smarts Contrats (Contrats Intelligents) qui vous permettent d'enlever tous les intermédiaires en automatisant des actions et/ou conditions.
 
-💠 Each NFT has an ID and a holder, which allows you to manage benefits anonymously and freely without having to contact the holder.
+💠 Chaque NFT a une ID et un détenteur, ce qui permet de gérer anonymement et librement les avantages sans devoir contacter ce dernier.
 
 {% hint style="success" %}
-How satisfying, with 3333 NFTs getting swapped, can you imagine having to manage everything 1 by 1 🤯
+Quelle satisfaction, avec 3333 NFTs qui se font échanger, imaginez-vous tout devoir gérer 1 par 1 🤯
 {% endhint %}
+

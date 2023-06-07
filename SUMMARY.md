@@ -1,13 +1,13 @@
 # Table of contents
 
-* [Introduction](README.md)
-* [Technology](technology.md)
+* [👋 Introduction](README.md)
+* [💾 Technologie](technologie.md)
 * [🚀 Admin - Get Started](admin-get-started.md)
 
 ## 📖 Learn
 
 * [NFT](learn/nft/README.md)
-  * [Value](learn/nft/value.md)
+  * [La valeur](learn/nft/la-valeur.md)
 
 ## 💫 Use cases
 

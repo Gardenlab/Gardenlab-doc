@@ -2,80 +2,80 @@
 
 <figure><img src=".gitbook/assets/logo-white.png" alt=""><figcaption></figcaption></figure>
 
-## Gardenlab in a Few Words
+## Gardenlab en quelques mots
 
-👋🏻 Welcome to the introduction page of Gardenlab!
+👋🏻 Bienvenue sur la page d'introduction de Gardenlab !
 
-We offer tools for administering collections of NFTs (NFT membership card, QR code, CRM, blockchain technology, etc.) to speed up customer engagement and create your exclusive community.
+Nous proposons des outils pour gérer des collections de NFT (carte de membre NFT, code QR, CRM, technologie de la blockchain, etc.) afin d'accélérer l'engagement des clients et de créer votre communauté exclusive.
 
-## Creating Your Account, Program, and Collections
+## Création de votre compte, programme et collections
 
-To create your account, simply log in to the Gardenlab platform for the first time... and voila, you're done!
+Pour créer votre compte, il vous suffit de vous connecter à la plateforme Gardenlab pour la première fois... et voilà, c'est fait !
 
-You can log in with a crypto wallet (cryptowallet) like Metamask or simply with your email address. Convenient and secure, registration and login take a maximum of 20 seconds.
+Vous pouvez vous connecter avec un portefeuille crypto (cryptowallet) comme Metamask ou simplement avec votre adresse e-mail. Pratique et sécurisé, l'inscription et la connexion ne prennent que 20 secondes maximum.&#x20;
 
-Creating your program and NFT collections will initially go through our services. We will initialize your collection and then you can modify it as you wish: brand images, name, number of membership cards, description, links to networks, etc.
+La création de votre programme et de vos collections NFT passera initialement par nos services. Nous initialiserons votre collection, puis vous pourrez la modifier à votre guise : images de marque, nom, nombre de cartes de membre, description, liens vers les réseaux, etc.
 
-📺 Watch the illustrative video:
+📺 Regardez la vidéo explicative :
 
 [#modify-collection-details](admin-get-started.md#modify-collection-details "mention")
 
-## Define Your Club Card Benefits and Access
+## Définissez les avantages et l'accès à votre carte de club
 
-Once the collection of membership cards and the program are defined together, let's move on to gamification.
+Une fois la collection de cartes de membre et le programme définis ensemble, passons à la gamification.&#x20;
 
-First, define the conditions of use and "evolution" of your cards, the benefits and their access and unlocking methods, the first customer journey/scans, etc.
+Tout d'abord, définissez les conditions d'utilisation et l'"évolution" de vos cartes, les avantages et leurs méthodes d'accès et de déverrouillage, le premier parcours/clientèle balayé, etc.
 
-Then, using Gardenlab tools, you can configure them simply.
+Ensuite, à l'aide des outils de Gardenlab, vous pouvez les configurer simplement.
 
-The information will then be on the NFT page of the holders.
+Les informations seront ensuite présentes sur la page NFT des détenteurs.
 
-⛓️ We even integrate partners from the WEB3 ecosystem to expand the possibilities of benefits and rewards applicable to club card holders.
+⛓️ Nous intégrons même des partenaires de l'écosystème WEB3 pour élargir les possibilités d'avantages et de récompenses applicables aux détenteurs de la carte de club.
 
-📺 Watch the illustrative video:
+📺 Regardez la vidéo explicative :
 
 [#create-a-scan-campaign-advantage](admin-get-started.md#create-a-scan-campaign-advantage "mention")
 
-## Managing Your Interaction with QR Codes
+## Gérer votre interaction avec les codes QR
 
-Accessible and easy to use: the QR code!
+Accessible et facile à utiliser : le code QR !
 
-To evolve a membership card, simply generate a QR code for the program directly from the Gardenlab application. Similarly, to take advantage of a reward, the application provides the user with a unique QR code that will offer its holder a personalized advantage, included in the program.
+Pour faire évoluer une carte de membre, il vous suffit de générer un code QR pour le programme directement depuis l'application Gardenlab. De même, pour profiter d'une récompense, l'application fournit à l'utilisateur un code QR unique qui offrira à son détenteur un avantage personnalisé inclus dans le programme.
 
-🔒 In addition to the QR code, a textual password can also be generated to allow cardholders to apply the interaction to their card
+🔒 En plus du code QR, un mot de passe textuel peut également être généré pour permettre aux détenteurs de carte d'appliquer l'interaction à leur carte.
 
-📷 The interaction can be applied by the holder themselves, by scanning the generated QR code, but not only... it can also be applied by an administrator by scanning the holder's NFT!
+📷 L'interaction peut être appliquée par le détenteur lui-même en scannant le code QR généré, mais pas seulement... elle peut également être appliquée par un administrateur en scannant le NFT du détenteur !
 
-📺 Watch the illustrative video:
+📺 Regardez la vidéo explicative :
 
 [#create-an-interaction-to-evolve-nfts](admin-get-started.md#create-an-interaction-to-evolve-nfts "mention")
 
-## Use Customer Data to Personalize/Gamify Your Benefits and Track Your Customer Journey (According to CRM)
+## Utilisez les données clients pour personnaliser et gamifier vos avantages et suivre le parcours client (selon le CRM)
 
-Using Gardenlab also means easy and quick access to statistics from your collection, in other words, customer data. These key information offer the possibility of creating a personalized customer journey as well as benefits and rewards that precisely meet customers' expectations and desires.
+L'utilisation de Gardenlab signifie également un accès facile et rapide aux statistiques de votre collection, autrement dit, aux données clients. Ces informations clés offrent la possibilité de créer un parcours client personnalisé ainsi que des avantages et des récompenses qui répondent précisément aux attentes et aux désirs des clients.
 
-🤖 It even seems that artificial intelligence will be natively integrated into Gardenlab for more personalization, suggestions, and automation.
+🤖 Il semblerait même que l'intelligence artificielle soit intégrée nativement à Gardenlab pour une plus grande personnalisation, des suggestions et une automatisation accrues.
 
-📺 Watch the illustrative video:
+📺 Regardez la vidéo explicative :
 
 [#view-collection-statistics-scans-and-interactions](admin-get-started.md#view-collection-statistics-scans-and-interactions "mention")
 
 ***
 
-## Tutorial Videos
+## Videos tutoriel
 
-### Modify Collection Details
+### Modifier les détails de la collection
 
 {% embed url="https://drive.google.com/file/d/12Z_03VjOeAs0VIkw362UMyYzNx0pTPvn/preview" %}
 
-### Create an Interaction to Evolve NFTs
+### Créer une intéraction pour faire évoluer les NFT
 
 {% embed url="https://drive.google.com/file/d/1PBLxFfLeHw1pXl_n27g9AECMDoxhIBQ6/preview" %}
 
-### Create a Scan Campaign (Advantage)
+### Créer une campagne de scan (avantages)
 
 {% embed url="https://drive.google.com/file/d/1nxt3ZjjtuWVqnqui7IM6uEN0pua5l1TG/preview" %}
 
-### View Collection Statistics (Scans and Interactions)
+### Voir les statistiques de la collection (Scans et Interactions)
 
 {% embed url="https://drive.google.com/file/d/1Q-ysoruNhrIdxBvkT1naAr2nFRpXodzs/preview" %}
