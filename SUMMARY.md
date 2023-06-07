@@ -13,7 +13,7 @@
 
 * [Events](use-cases/events.md)
 * [Sport (Fan Experience)](use-cases/sport-fan-experience.md)
-* [Centres Commerciaux](use-cases/centres-commerciaux.md)
+* [Centres Commerciaux](use-cases/centre-commerciaux.md)
 
 ## 👨💻 API
 
