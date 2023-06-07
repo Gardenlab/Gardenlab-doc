@@ -26,7 +26,7 @@ Notre plateforme offre de nouveaux types d'interactions et mécanismes de reconn
 
 Gardenlab est une plateforme qui permet aux clubs de sport de créer facilement leur propre collection de cartes club NFT et de les distribuer à leurs fans, même s'ils n'ont pas de connaissances particulières en Web3.&#x20;
 
-:bulb: Nous nous assurons d'être les plus simples et accessibles possibles, afin que l'utilisation des NFT ne constitue pas un frein pour les utilisateurs, tout en dévoilant pleinement leur potentiel. Nous sommes convaincus que cette approche est la clé d'une stratégie de modernisation réussie.
+:bulb: Notre priorité est de rendre l'utilisation des NFTs la plus simple et accessible possible pour les utilisateurs, tout en permettant de dévoiler pleinement leur potentiel. Nous sommes convaincus que cette approche est essentielle pour réussir une stratégie de modernisation grâce au Web3.
 
 Chaque carte club NFT, par définition, est unique et appartient à son propriétaire, renforçant ainsi son sentiment d'appartenance au club.&#x20;
 
