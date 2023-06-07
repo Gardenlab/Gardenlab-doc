@@ -10,9 +10,9 @@ Les technologies émergentes telles que la blockchain et les NFT sont en train d
 
 C'est dans ce contexte que Gardenlab réinvente la _**fan expérience.**_
 
-&#x20;Notre plateforme offre de nouveaux types d'interactions et de reconnaissance afin d'engager plus que jamais votre communauté de supporters.&#x20;
+Notre plateforme offre de nouveaux types d'interactions et mécanismes de reconnaissance afin d'engager plus que jamais votre communauté de supporters.&#x20;
 
-À l'heure où les fans cherchent leur identité, un sentiment d'appartenance, un lien émotionnel fort et des expériences uniques, les cartes club NFT apparaissent comme la solution idéale pour créer une connexion unique avec ses supporters.
+À l'heure où les fans cherchent leur identité, un sentiment d'appartenance, un lien émotionnel fort et des expériences uniques, les cartes club NFT apparaissent comme la solution idéale pour créer **une connexion unique avec vos supporters.**
 
 ### **Notre solution s'adresse à vous si vous êtes un club sportif et vous êtes confronté à :**
 
@@ -26,11 +26,13 @@ C'est dans ce contexte que Gardenlab réinvente la _**fan expérience.**_
 
 Gardenlab est une plateforme qui permet aux clubs de sport de créer facilement leur propre collection de cartes club NFT et de les distribuer à leurs fans, même s'ils n'ont pas de connaissances particulières en Web3.&#x20;
 
-Chaque carte est unique et appartient à son propriétaire, renforçant ainsi son sentiment d'appartenance au club.&#x20;
+:bulb: Nous nous assurons d'être les plus simples et accessibles possibles, afin que l'utilisation des NFT ne constitue pas un frein pour les utilisateurs, tout en dévoilant pleinement leur potentiel. Nous sommes convaincus que cette approche est la clé d'une stratégie de modernisation réussie.
+
+Chaque carte club NFT, par définition, est unique et appartient à son propriétaire, renforçant ainsi son sentiment d'appartenance au club.&#x20;
 
 <figure><img src="../.gitbook/assets/Platinum_01_1 (1).gif" alt="" width="259"><figcaption></figcaption></figure>
 
-Les cartes mettent en avant trois éléments qui définissent son  propriétaire :
+Les cartes mettent en avant trois éléments qui définissent leur propriétaire :
 
 * le niveau,&#x20;
 * le statut,
