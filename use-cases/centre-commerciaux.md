@@ -56,7 +56,7 @@ Les cartes sont uniques et appartiennent à leur détenteur, ce qui renforce le 
 
 **Etoile Plaza** gamifie l’expérience en proposant aux détenteurs de cartes NFT d’évoluer de statut (bronze, argent, or) en fonction de leurs achats et interactions en magasin via des QR codes. Cela permet de capter encore plus finement les données clients et de proposer une expérience omnicanale.
 
-<mark style="color:green;">Par exemple, Etoile Plaza</mark> <mark style="color:green;"></mark><mark style="color:green;">**incite les clients à venir en magasin, l**</mark><mark style="color:green;">es enseignes placent un QR code dans leur magasin, lorsque les clients s'y rendent, ces derniers scannent ces QR codes à partir de leur carte afin de prouver leur présence en magasin et gagner de l'XP.</mark>
+<mark style="color:green;">Par exemple, Etoile Plaza</mark> <mark style="color:green;"></mark><mark style="color:green;">**incite les clients à venir en magasin**</mark><mark style="color:green;">, les enseignes placent un QR code dans leur magasin, lorsque les clients s'y rendent, ces derniers scannent ces QR codes à partir de leur carte afin de prouver leur présence en magasin et gagner de l'XP.</mark>
 
 
 
