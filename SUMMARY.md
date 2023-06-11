@@ -14,6 +14,7 @@
 * [Events](use-cases/events.md)
 * [Sport (Fan Experience)](use-cases/sport-fan-experience.md)
 * [Centres Commerciaux](use-cases/centre-commerciaux.md)
+* [Club vacances (Hôtels,Camping)](use-cases/club-vacances-hotels-camping.md)
 
 ## 👨💻 API
 
