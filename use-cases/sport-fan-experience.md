@@ -14,7 +14,7 @@ Notre plateforme offre de nouveaux types d'interactions et mécanismes de reconn
 
 À l'heure où les fans cherchent leur identité, un sentiment d'appartenance, un lien émotionnel fort et des expériences uniques, les cartes club NFT apparaissent comme la solution idéale pour créer **une connexion unique avec vos supporters.**
 
-### **Notre solution s'adresse à vous si vous êtes un club sportif et vous êtes confronté à :**
+### **Notre solution s'adresse à vous si vous êtes confronté à :**
 
 * Des difficultés à captiver et à divertir vos supporters pendant et après les rencontres sportives
 * Une saturation de vos moyens de communication, due à une utilisation excessive et inefficace des réseaux sociaux, des emails et des SMS
@@ -24,9 +24,9 @@ Notre plateforme offre de nouveaux types d'interactions et mécanismes de reconn
 
 ### En quoi consiste Gardenlab concrètement ?&#x20;
 
-Gardenlab est une plateforme qui permet aux clubs de sport de créer facilement leur propre collection de cartes club NFT et de les distribuer à leurs fans, même s'ils n'ont pas de connaissances particulières en Web3.&#x20;
+Gardenlab est une plateforme qui permet aux clubs de sport de créer facilement leur propre collection de cartes club NFT et de les distribuer à leurs fans afin de les engager.
 
-:bulb: Notre priorité est de rendre l'utilisation des NFTs la plus simple et accessible possible pour les utilisateurs, tout en permettant de dévoiler pleinement leur potentiel. Nous sommes convaincus que cette approche est essentielle pour réussir une stratégie de modernisation grâce au Web3.
+:bulb: Notre priorité est de rendre l'utilisation des NFTs la plus simple et accessible possible pour les utilisateurs, tout en permettant d'exploiter pleinement leur potentiel. Nous sommes convaincus que cette approche est essentielle pour réussir une stratégie de modernisation avec le Web3.
 
 Chaque carte club NFT, par définition, est unique et appartient à son propriétaire, renforçant ainsi son sentiment d'appartenance au club.&#x20;
 
@@ -54,7 +54,7 @@ Grâce à une **boite à outils**, les clubs peuvent créer diverses interaction
 
 **3)** Récompenser chaque achat qu'un fan effectue sur la boutique en ligne de manière automatique grâce à notre API ou physique via le QR code la carte club NFT.
 
-**4)** Organiser des sondages, des quiz, des votes et des loteries pour recueillir des commentaires et récompenser l'implication.
+**4)** Organiser des sondages, des quiz, des votes et des loteries pour recueillir des feedbacks et récompenser l'implication.
 
 
 
@@ -70,7 +70,9 @@ Cela signifie qu'il devient facile, rapide et peu coûteux de **créer des colla
 
 ### Mettons-nous à la place d'un fan (Antoine) pour comprendre l'expérience qu'il peut vivre avec Gardenlab.
 
-<figure><img src="../.gitbook/assets/Une saturation de vos moyens de communication, due à une utilisation excessive et inefficace des réseaux sociaux, des emails et des SMS Des difficultés à captiver et à divertir vos supporters pendant et après l (2).png" alt=""><figcaption><p>Antoine et ses amis</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Une saturation de vos moyens de communication, due à une utilisation excessive et inefficace des réseaux sociaux, des emails et des SMS Des difficultés à captiver et à divertir vos supporters pendant et après l (2).png" alt=""><figcaption></figcaption></figure>
+
+#### Inscription & connexion en <1 min
 
 D'abord, Antoine se connecte sur la plateforme en moins d'une minute en utilisant son adresse mail.&#x20;
 
@@ -78,13 +80,15 @@ Ensuite, il peut récupérer sa carte club NFT facilement sur le site du club ou
 
 Désormais, il dispose d'une preuve tangible de son appartenance à la communauté de son club. Cependant, il rencontre un problème : sa carte se trouve encore au niveau 1, son statut est celui de bronze, et il n'a pas encore bénéficié d'avantages.
 
+#### Génération d'engagement et récompense
+
 Par conséquent, Antoine se rend au stade pour assister à un match avec ses amis, avant le match, il décide d'acheter une écharpe pour soutenir son équipe. Au moment de l'achat, il présente le QR code de sa carte club NFT et gagne ainsi de l'XP, ce qui lui permet d'augmenter son niveau.
 
 Avant le coup de sifflé, un QR code est affiché sur l'écran géant. Antoine sort son téléphone et scanne le QR code à partir de sa carte, ce qui lui permet d'augmenter à nouveau son niveau et de débloquer une réduction chez l'un des partenaires du club, qu'il pourra utiliser en présentant le QR code de sa carte club NFT.&#x20;
 
 À la fin du match, Antoine dispose d'un unique droit de vote pour élire l'homme du match. Il peut également répondre à un sondage pour gagner de nouveaux points d'XP.
 
-Après avoir atteint le niveau 3, le statut Silver, Antoine est impatient de revenir s'impliquer dans la vie de son club pour continuer à gravir les échelons du classement des supporters.
+Après avoir atteint le niveau 3, le statut silver, Antoine est impatient de revenir s'impliquer dans la vie de son club pour continuer à gravir les échelons du classement des supporters.
 
 
 
@@ -92,7 +96,7 @@ Après avoir atteint le niveau 3, le statut Silver, Antoine est impatient de rev
 
 
 
-<figure><img src="../.gitbook/assets/Une saturation de vos moyens de communication, due à une utilisation excessive et inefficace des réseaux sociaux, des emails et des SMS Des difficultés à captiver et à divertir vos supporters pendant et après l (3).png" alt=""><figcaption><p>Des fans qui sont déçus de ne pas pouvoir bénéficier eux aussi de Gardenlab.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Une saturation de vos moyens de communication, due à une utilisation excessive et inefficace des réseaux sociaux, des emails et des SMS Des difficultés à captiver et à divertir vos supporters pendant et après l (3).png" alt=""><figcaption><p>Des fans déçus de ne pas pouvoir bénéficier eux aussi de Gardenlab.</p></figcaption></figure>
 
 
 
