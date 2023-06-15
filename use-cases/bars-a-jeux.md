@@ -26,12 +26,11 @@ Chaque mois, les détenteurs de la Carte Club, tels qu'Antoine, sont classés en
 
 Enfin, les Cartes Club NFT sont interopérables avec les partenaires complémentaires de **La Taverne du Mage**. Ainsi, Antoine peut également gagner des points d'XP en se rendant dans des établissements partenaires tels que des restaurants ou des salons de coiffure. **La Taverne du Mage** a également d'autres bars à jeux dans toute la France, où la Carte Club NFT est également valable.
 
+<figure><img src="../.gitbook/assets/use case + tarif bar à jeux (6).png" alt=""><figcaption></figcaption></figure>
 
+**Grâce à l'intégration de Gardenlab, la Taverne du Mage a réussi à attirer davantage de joueurs et à augmenter leur engagement, tout en offrant une expérience ludique et amusante à sa communauté.**
 
-Grâce à l'intégration de Gardenlab, la Taverne du Mage a réussi à attirer davantage de joueurs et à augmenter leur engagement, tout en offrant une expérience ludique et amusante à sa communauté.\
-
-
-**Pour en savoir plus :** [contact@gardenlab.io](mailto:contact@gardenlab.io)
+Pour en savoir plus : [contact@gardenlab.io](mailto:contact@gardenlab.io)
 
 
 
