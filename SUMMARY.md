@@ -11,11 +11,11 @@
 
 ## 💫 Use cases
 
-* [Events](use-cases/events.md)
 * [Sport (Fan Experience)](use-cases/sport-fan-experience.md)
+* [Bar à jeux](use-cases/bar-a-jeux.md)
 * [Centres Commerciaux](use-cases/centre-commerciaux.md)
 * [Clubs vacances (hôtels,campings)](use-cases/clubs-vacances-hotels-campings.md)
-* [Bar à jeux](use-cases/bar-a-jeux.md)
+* [Events](use-cases/events.md)
 
 ## 👨💻 API
 
