@@ -1,0 +1,196 @@
+openapi: '3.0.2'
+info:
+  title: Gardenlab API
+  version: '1.0'
+servers:
+  - url: https://demo.gardenlab.io/api/v1
+    description: The sandbox server (uses test data)
+  - url: https://app.gardenlab.io/api/v1
+    description: The production server (uses live data)
+
+components:
+
+  securitySchemes:
+    bearerAuth:            # arbitrary name for the security scheme
+      type: http
+      scheme: bearer
+      bearerFormat: JWT    # optional
+
+security:
+  - bearerAuth: []         # use the same name as above
+
+paths:
+  /newUserForPartner:
+    post:
+      description: Notifies Gardenlab that a user has been created in the database. Create and reserve a NFT for the user, if the conditions are respected.
+      requestBody:
+        required: true
+        description: The information about the event and the user to create a NFT for.
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: object
+                properties:
+                  origin:
+                    type: string
+                    description: The partner's name.
+                    example: spacex
+                  email:
+                    type: string
+                    description: The user's email address. The NFT created will be reserved to this email.
+                  uid:
+                    type: string
+                    description: The user identification.
+                  user_category_id:
+                    type: string
+                    description: The user catagory. This defines which NFT to distribute.
+                    example: VIP
+                  type:
+                    type: string
+                    description: "The type associated with a specific contract/collection (ex: the event ID or 'subscription')"
+                    example: subscription
+      responses:
+        200:
+          description: Returns an array of object containing the NFTs created for the user.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  anyOf:
+                    - type: object
+                      properties:
+                        contract:
+                          type: string
+                          description: The NFT's smart contract address.
+                        tokenId:
+                          type: string
+                          description: The NFT's token ID.
+                          example: 123
+                        attributes:
+                          type: object
+                          description: The NFT's attributes object.
+                        url:
+                          type: string
+                          description: The NFT's page URL.
+                        uid:
+                          type: string
+                          description: The ID of the owner of the NFT.
+                        email:
+                          type: string
+                          description: The owner of the NFT's email.
+                    - type: object
+                      properties:
+                        error:
+                          type: string
+                          description: The error message
+        403:
+          description: The authentication key is not correct
+        500:
+          description: An internal error occured. Please verify the message
+
+
+  /newActionForUser:
+    post:
+      description: Notifies Gardenlab that a user has performed an action in the partner ecosystem
+      requestBody:
+        required: true
+        description: The information about the action the user performed.
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                origin:
+                  type: string
+                  description: The partner's name.
+                  example: spacex
+                type:
+                  type: string
+                  description: The type of the collection that has been created for this action.
+                action_id:
+                  type: string
+                  description: The action ID.
+                guest:
+                  type: object
+                  properties:
+                    email:
+                      type: string
+                      description: The user email address.
+                    uid:
+                      type: string
+                      description: The user ID.
+      responses:
+        200:
+          description: Returns an object containing the NFT created for the user.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  contract:
+                    type: string
+                    description: The NFT's smart contract address.
+                  tokenId:
+                    type: string
+                    description: The NFT token ID.
+                  attributes:
+                    type: object
+                    description: The NFT attributes.
+                  url:
+                    type: string
+                    description: The NFT page URL.
+                  uid:
+                    type: string
+                    description: The owner User ID.
+                  email:
+                    type: string
+                    description: The owner email address.
+        400:
+          description: The request is malformed. Please verify the content of the body.
+        500:
+          description: An internal error occured. Check the error message.
+
+  /getNftByTokenId:
+    get:
+      description: Retrieve the information on a specific NFT of a contract.
+      parameters:
+        - in: query
+          name: contract
+          schema:
+            type: string
+          description: The contract address of the token.
+        - in: query
+          name: tokenId
+          schema:
+            type: integer
+          description: The token ID
+      responses:
+        200:
+          description: Returns an object containing the NFT information.
+        400:
+          description: There is an error in the query.
+        404:
+          description: The specified NFT cannot be found in Gardenlab database.
+
+
+  /getNft:
+    get:
+      description: Notifies Gardenlab that a user has performed an action in the partner ecosystem
+      parameters:
+        - in: query
+          name: offset
+          schema:
+            type: integer
+          description: The number of items to skip before starting to collect the result set
+        - in: query
+          name: limit
+          schema:
+            type: integer
+          description: The numbers of items to return
+      responses:
+        200:
+          description: Returns an object containing the NFT created for the user.
+

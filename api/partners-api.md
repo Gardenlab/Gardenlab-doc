@@ -21,3 +21,7 @@ An API key and a configured collection are required to perform properly those ac
 {% swagger src="../.gitbook/assets/openAPI_spec.yml" path="/newActionForUser" method="post" %}
 [openAPI_spec.yml](../.gitbook/assets/openAPI_spec.yml)
 {% endswagger %}
+
+{% swagger src="../.gitbook/assets/openAPI_spec (2).yml" path="/getNftByTokenId" method="get" %}
+[openAPI_spec (2).yml](<../.gitbook/assets/openAPI_spec (2).yml>)
+{% endswagger %}
