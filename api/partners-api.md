@@ -18,10 +18,14 @@ An API key and a configured collection are required to perform properly those ac
 [openAPI_spec.yml](../.gitbook/assets/openAPI_spec.yml)
 {% endswagger %}
 
-{% swagger src="../.gitbook/assets/openAPI_spec.yml" path="/newActionForUser" method="post" %}
-[openAPI_spec.yml](../.gitbook/assets/openAPI_spec.yml)
+**Note**: When creating a NFT for a user, this NFT is prepared but not minted. The mint of the NFT occurs when the user claims it using the email address.
+
+{% swagger src="../.gitbook/assets/openAPI_spec (2).yml" path="/newActionForUser" method="post" %}
+[openAPI_spec (2).yml](<../.gitbook/assets/openAPI_spec (2).yml>)
 {% endswagger %}
 
-{% swagger src="../.gitbook/assets/openAPI_spec (2).yml" path="/getNftByTokenId" method="get" %}
+**Note**: The action saved for a NFT is applied if the NFT is minted or not.
+
+{% swagger src="../.gitbook/assets/openAPI_spec (2).yml" path="/getNft" method="get" %}
 [openAPI_spec (2).yml](<../.gitbook/assets/openAPI_spec (2).yml>)
 {% endswagger %}

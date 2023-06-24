@@ -113,9 +113,6 @@ paths:
                 action_id:
                   type: string
                   description: The action ID.
-                xpIncrement:
-                  type: number
-                  description: The XP value to add on the NFT.
                 guest:
                   type: object
                   properties:
