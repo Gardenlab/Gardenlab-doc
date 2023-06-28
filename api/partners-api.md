@@ -26,6 +26,6 @@ An API key and a configured collection are required to perform properly those ac
 
 **Note**: The action saved for a NFT is applied if the NFT is minted or not.
 
-{% swagger src="../.gitbook/assets/openAPI_spec (2).yml" path="/getNft" method="get" %}
+{% swagger src="../.gitbook/assets/openAPI_spec (2).yml" path="/getNftByTokenId" method="get" %}
 [openAPI_spec (2).yml](<../.gitbook/assets/openAPI_spec (2).yml>)
 {% endswagger %}
