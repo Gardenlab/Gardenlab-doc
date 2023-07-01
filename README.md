@@ -22,7 +22,9 @@ Le but de Gardenlab est d'approfondir la relation client, de créer une connexio
 
 Concrètement, notre produit permet aux entreprises de créer, distribuer et gérer des cartes de membre au format NFT de manière simple et accessible à tous. L'innovation principale réside dans l'utilisation de NFT dynamiques (dNFT). Les cartes de membre NFT évoluent en fonction de l'engagement des utilisateurs à travers des interactions en ligne (API) et hors ligne via l'utilisation de QR codes.
 
-<figure><img src=".gitbook/assets/Présentation produit gardenlab (2).jpg" alt="" width="563"><figcaption></figcaption></figure>
+
+
+<figure><img src=".gitbook/assets/Présentation produit gardenlab (2) (1).jpg" alt="" width="563"><figcaption></figcaption></figure>
 
 ## 🌐 Les avantages du Web3 :&#x20;
 

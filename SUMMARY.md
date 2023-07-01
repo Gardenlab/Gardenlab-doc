@@ -19,4 +19,3 @@
 ## 👨💻 API
 
 * [Partners API](api/partners-api.md)
-* [General API](api/general-api.md)
