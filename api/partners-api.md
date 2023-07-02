@@ -21,7 +21,7 @@ An API key and a configured collection are required to properly perform those ac
 
 #### Interactions
 
-{% swagger src="../.gitbook/assets/openAPI_spec.yml" path="/newUserForPartner" method="post" %}
+{% swagger src="../.gitbook/assets/openAPI_spec.yml" path="/saveActionInteraction" method="post" %}
 [openAPI_spec.yml](../.gitbook/assets/openAPI_spec.yml)
 {% endswagger %}
 
@@ -37,7 +37,7 @@ An API key and a configured collection are required to properly perform those ac
 
 #### Action
 
-{% swagger src="../.gitbook/assets/openAPI_spec.yml" path="/newUserForPartner" method="post" %}
+{% swagger src="../.gitbook/assets/openAPI_spec.yml" path="/newActionForUser" method="post" %}
 [openAPI_spec.yml](../.gitbook/assets/openAPI_spec.yml)
 {% endswagger %}
 
