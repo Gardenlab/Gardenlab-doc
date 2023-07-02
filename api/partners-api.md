@@ -21,34 +21,34 @@ An API key and a configured collection are required to properly perform those ac
 
 #### Interactions
 
-{% swagger src="../.gitbook/assets/openAPI_spec (1).yml" path="/saveActionInteraction" method="post" %}
-[openAPI_spec (1).yml](<../.gitbook/assets/openAPI_spec (1).yml>)
+{% swagger src="../.gitbook/assets/openAPI_spec.yml" path="/newUserForPartner" method="post" %}
+[openAPI_spec.yml](../.gitbook/assets/openAPI_spec.yml)
 {% endswagger %}
 
 ### Operation
 
 #### User creation
 
-{% swagger src="../.gitbook/assets/openAPI_spec (1).yml" path="/newUserForPartner" method="post" %}
-[openAPI_spec (1).yml](<../.gitbook/assets/openAPI_spec (1).yml>)
+{% swagger src="../.gitbook/assets/openAPI_spec.yml" path="/newUserForPartner" method="post" %}
+[openAPI_spec.yml](../.gitbook/assets/openAPI_spec.yml)
 {% endswagger %}
 
 **Note**: When creating a NFT for a user, this NFT is prepared but not minted. The mint of the NFT occurs when the user claims it using the email address.
 
 #### Action
 
-{% swagger src="../.gitbook/assets/openAPI_spec (1).yml" path="/newActionForUser" method="post" %}
-[openAPI_spec (1).yml](<../.gitbook/assets/openAPI_spec (1).yml>)
+{% swagger src="../.gitbook/assets/openAPI_spec.yml" path="/newUserForPartner" method="post" %}
+[openAPI_spec.yml](../.gitbook/assets/openAPI_spec.yml)
 {% endswagger %}
 
 **Note**: The action saved for a NFT is applied if the NFT is minted or not.
 
 ### Getters
 
-{% swagger src="../.gitbook/assets/openAPI_spec (1).yml" path="/getNftByTokenId" method="get" %}
-[openAPI_spec (1).yml](<../.gitbook/assets/openAPI_spec (1).yml>)
+{% swagger src="../.gitbook/assets/openAPI_spec.yml" path="/getNftByTokenId" method="get" %}
+[openAPI_spec.yml](../.gitbook/assets/openAPI_spec.yml)
 {% endswagger %}
 
-{% swagger src="../.gitbook/assets/openAPI_spec (1).yml" path="/getAllInteractions" method="get" %}
-[openAPI_spec (1).yml](<../.gitbook/assets/openAPI_spec (1).yml>)
+{% swagger src="../.gitbook/assets/openAPI_spec.yml" path="/getAllInteractions" method="get" %}
+[openAPI_spec.yml](../.gitbook/assets/openAPI_spec.yml)
 {% endswagger %}

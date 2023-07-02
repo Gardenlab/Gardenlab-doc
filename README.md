@@ -24,7 +24,7 @@ Concrètement, notre produit permet aux entreprises de créer, distribuer et gé
 
 
 
-<figure><img src=".gitbook/assets/Présentation produit gardenlab (2) (1).jpg" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/Présentation produit gardenlab (2).jpg" alt="" width="563"><figcaption></figcaption></figure>
 
 ## 🌐 Les avantages du Web3 :&#x20;
 

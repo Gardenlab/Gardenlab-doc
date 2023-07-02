@@ -66,7 +66,7 @@ security:
 paths:
   /newUserForPartner:
     post:
-      description: Notifies Gardenlab that a user has been created in the database. Create and reserve a NFT for the user, if the conditions are respected. The NFT associated to `user_category_id` will be used for this user.
+      description: Notifies Gardenlab that a user has been created in the database. Create and reserve a NFT for the user, if the conditions are respected.
       requestBody:
         required: true
         description: The information about the event and the user to create a NFT for.
@@ -109,7 +109,6 @@ paths:
                         contract:
                           type: string
                           description: The NFT's smart contract address.
-                          example: "0x0123456789abcdef0123456789abcdef01234567"
                         tokenId:
                           type: string
                           description: The NFT's token ID.
@@ -131,10 +130,8 @@ paths:
                         error:
                           type: string
                           description: The error message
-        400:
-          description: The request is not valid or an error occured.
         403:
-          description: The API key is missing or incorrect.
+          description: The authentication key is not correct
         500:
           description: An internal error occured. Please verify the message
 
@@ -156,7 +153,7 @@ paths:
                   example: spacex
                 contract_id:
                   type: string
-                  description: "The contract ID associated with a specific contract/collection/customer (ex: the event ID or 'subscription')"
+                  description: The contract ID of the collection that has been created for this action.
                   example: summer_party
                 action_id:
                   type: string
@@ -205,8 +202,6 @@ paths:
                     description: The owner email address.
         400:
           description: The request is malformed. Please verify the content of the body.
-        403:
-          description: The API key is missing or incorrect.
         500:
           description: An internal error occured. Check the error message.
 
@@ -228,7 +223,7 @@ paths:
                   example: spacex
                 contract_id:
                   type: string
-                  description: "The contract ID associated with a specific contract/collection/customer (ex: the event ID or 'subscription')"
+                  description: The contract ID of the collection that has been created for this action.
                   example: summer_party
                 interactionId:
                   type: string
@@ -256,8 +251,6 @@ paths:
                     example: IQ0LuundpiAvnfDcQ21Y
         400:
           description: The request is malformed. Please verify the content of the body.
-        403:
-          description: The API key is missing or incorrect.
         500:
           description: An internal error occured. Check the error message.
 
@@ -282,8 +275,6 @@ paths:
           description: Returns an object containing the NFT information.
         400:
           description: There is an error in the query.
-        403:
-          description: The API key is missing or incorrect.
         404:
           description: The specified NFT cannot be found in Gardenlab database.
 
@@ -326,7 +317,7 @@ paths:
             type: string
         - in: query
           name: contract_id
-          description: "The contract ID associated with a specific contract/collection/customer (ex: the event ID or 'subscription')"
+          description: The contract_id for which to retrieve the interactions
           example: summer_party
           schema:
             type: string
@@ -341,8 +332,6 @@ paths:
                   $ref: '#/components/schemas/Interaction'
         400:
           description: There is an error in the query.
-        403:
-          description: The API key is missing or incorrect.
         500:
           description: An internal error occured. Check the error message.
 

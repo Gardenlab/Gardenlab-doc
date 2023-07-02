@@ -7,8 +7,6 @@ servers:
     description: The sandbox server (uses test data)
   - url: https://app.gardenlab.io/api/v1
     description: The production server (uses live data)
-  - url: http://localhost:5001/gardenlab-test/europe-west1/
-    description: The emulator server
 
 components:
 
@@ -17,48 +15,6 @@ components:
       type: http
       scheme: bearer
       bearerFormat: JWT    # optional
-
-  schemas:
-    Interaction:
-      type: object
-      additionalProperties: false
-      properties:
-        type:
-          type: string
-          description: The interaction type (the NFT attribute to make an evolution on)
-          example: IRL Event
-        name:
-          type: string
-          description: The interaction name
-          example: Event checkin
-        description:
-          type: string
-          description: The interaction description
-          example: The interaction applied when a user get access to the event
-        xpIncrement:
-          type: number
-          description: The default number of XP points to add on the NFT, when applying this interaction
-          example: 5
-        noXp:
-          type: boolean
-          description: Whether the interaction adds XP or just an attribute `type`
-          example: false
-        customXpIncrement:
-          type: boolean
-          description: Whether the interaction accepts a custom XP increment (passed in the request parameters)
-          example: false
-        authScanCount:
-          type: boolean
-          description: Number of interactions that can be applied on one NFT. (-1 if infinity)
-          example: 1
-        action_id:
-          type: string
-          description: The action id keyword to call this interaction with in the API request
-          example: event_checkin
-      required:
-        - type
-        - name
-
 
 security:
   - bearerAuth: []         # use the same name as above
@@ -91,10 +47,10 @@ paths:
                     type: string
                     description: The user catagory. This defines which NFT to distribute.
                     example: VIP
-                  contract_id:
+                  type:
                     type: string
-                    description: "The contract ID associated with a specific contract/collection/customer (ex: the event ID or 'subscription')"
-                    example: summer_party
+                    description: "The type associated with a specific contract/collection (ex: the event ID or 'subscription')"
+                    example: subscription
       responses:
         200:
           description: Returns an array of object containing the NFTs created for the user.
@@ -151,18 +107,12 @@ paths:
                   type: string
                   description: The partner's name.
                   example: spacex
-                contract_id:
+                type:
                   type: string
-                  description: The contract ID of the collection that has been created for this action.
-                  example: summer_party
+                  description: The type of the collection that has been created for this action.
                 action_id:
                   type: string
                   description: The action ID.
-                  example: eshop_purchase
-                xpIncrement:
-                  type: number
-                  description: The XP value to add on the NFT. Applied only if the interaction allows it.
-                  example: 5
                 guest:
                   type: object
                   properties:
@@ -183,11 +133,9 @@ paths:
                   contract:
                     type: string
                     description: The NFT's smart contract address.
-                    example: "0x0123456789abcdef0123456789abcdef01234567"
                   tokenId:
                     type: string
                     description: The NFT token ID.
-                    example: 123
                   attributes:
                     type: object
                     description: The NFT attributes.
@@ -204,80 +152,6 @@ paths:
           description: The request is malformed. Please verify the content of the body.
         500:
           description: An internal error occured. Check the error message.
-
-
-  /saveActionInteraction :
-    post:
-      description: Create or update a new interaction and specify the action_id to use to apply the interaction.
-      requestBody:
-        required: true
-        description: The information about the interaction to create or update.
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                origin:
-                  type: string
-                  description: The partner's name.
-                  example: spacex
-                contract_id:
-                  type: string
-                  description: The contract ID of the collection that has been created for this action.
-                  example: summer_party
-                interactionId:
-                  type: string
-                  description: (optional) The interaction ID to edit. Leave empty to create.
-                  example: 0ER368760G8787238
-                interaction:
-                  $ref: '#/components/schemas/Interaction'
-              required:
-                - "origin"
-                - "contract_id"
-                - "interaction"
-      responses:
-        200:
-          description: Returns an object containing the interaction information along with its id.
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  interaction:
-                    $ref: '#/components/schemas/Interaction'
-                  id:
-                    type: string
-                    description: The interaction ID
-                    example: IQ0LuundpiAvnfDcQ21Y
-        400:
-          description: The request is malformed. Please verify the content of the body.
-        500:
-          description: An internal error occured. Check the error message.
-
-
-
-  /getNftByTokenId:
-    get:
-      description: Retrieve the information on a specific NFT of a contract.
-      parameters:
-        - in: query
-          name: contract
-          schema:
-            type: string
-          description: The contract address of the token.
-        - in: query
-          name: tokenId
-          schema:
-            type: integer
-          description: The token ID
-      responses:
-        200:
-          description: Returns an object containing the NFT information.
-        400:
-          description: There is an error in the query.
-        404:
-          description: The specified NFT cannot be found in Gardenlab database.
-
 
   /getNft:
     get:
@@ -296,42 +170,4 @@ paths:
       responses:
         200:
           description: Returns an object containing the NFT created for the user.
-
-
-  /getAllInteractions:
-    get:
-      description: Retrieve all the interactions for a contract.
-      parameters:
-        - in: query
-          name: origin
-          description: The partner's name.
-          example: spacex
-          required: true
-          schema:
-            type: string
-        - in: query
-          name: contract
-          description: The contract for which to retrieve the interactions
-          example: "0x0123456789abcdef0123456789abcdef01234567"
-          schema:
-            type: string
-        - in: query
-          name: contract_id
-          description: The contract_id for which to retrieve the interactions
-          example: summer_party
-          schema:
-            type: string
-      responses:
-        200:
-          description: Returns a list with all the interactions
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/Interaction'
-        400:
-          description: There is an error in the query.
-        500:
-          description: An internal error occured. Check the error message.
 
