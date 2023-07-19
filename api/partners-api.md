@@ -21,34 +21,38 @@ An API key and a configured collection are required to properly perform those ac
 
 #### Interactions
 
-{% swagger src="../.gitbook/assets/openAPI_spec.yml" path="/saveActionInteraction" method="post" %}
-[openAPI_spec.yml](../.gitbook/assets/openAPI_spec.yml)
+{% swagger src="../.gitbook/assets/openAPI_spec.yaml" path="/saveActionInteraction" method="post" %}
+[openAPI_spec.yaml](../.gitbook/assets/openAPI_spec.yaml)
 {% endswagger %}
 
 ### Operation
 
 #### User creation
 
-{% swagger src="../.gitbook/assets/openAPI_spec.yml" path="/newUserForPartner" method="post" %}
-[openAPI_spec.yml](../.gitbook/assets/openAPI_spec.yml)
+{% swagger src="../.gitbook/assets/openAPI_spec.yaml" path="/newUserForPartner" method="post" %}
+[openAPI_spec.yaml](../.gitbook/assets/openAPI_spec.yaml)
 {% endswagger %}
 
 **Note**: When creating a NFT for a user, this NFT is prepared but not minted. The mint of the NFT occurs when the user claims it using the email address.
 
 #### Action
 
-{% swagger src="../.gitbook/assets/openAPI_spec.yml" path="/newActionForUser" method="post" %}
-[openAPI_spec.yml](../.gitbook/assets/openAPI_spec.yml)
+{% swagger src="../.gitbook/assets/openAPI_spec.yaml" path="/newActionForUser" method="post" %}
+[openAPI_spec.yaml](../.gitbook/assets/openAPI_spec.yaml)
 {% endswagger %}
 
 **Note**: The action saved for a NFT is applied if the NFT is minted or not.
 
 ### Getters
 
-{% swagger src="../.gitbook/assets/openAPI_spec.yml" path="/getNftByTokenId" method="get" %}
-[openAPI_spec.yml](../.gitbook/assets/openAPI_spec.yml)
+{% swagger src="../.gitbook/assets/openAPI_spec.yaml" path="/getNftByTokenId" method="get" %}
+[openAPI_spec.yaml](../.gitbook/assets/openAPI_spec.yaml)
 {% endswagger %}
 
-{% swagger src="../.gitbook/assets/openAPI_spec.yml" path="/getAllInteractions" method="get" %}
-[openAPI_spec.yml](../.gitbook/assets/openAPI_spec.yml)
+{% swagger src="../.gitbook/assets/openAPI_spec.yaml" path="/getAllInteractions" method="get" %}
+[openAPI_spec.yaml](../.gitbook/assets/openAPI_spec.yaml)
+{% endswagger %}
+
+{% swagger src="../.gitbook/assets/openAPI_spec.yaml" path="/getAllInteractionScansForToken" method="get" %}
+[openAPI_spec.yaml](../.gitbook/assets/openAPI_spec.yaml)
 {% endswagger %}
