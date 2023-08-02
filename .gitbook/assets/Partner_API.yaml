@@ -1,0 +1,645 @@
+openapi: 3.0.2
+info:
+  title: publicapi API
+  version: '1.0'
+  contact:
+    name: Maxime Barthelemy
+    email: maxime.barthelemy@gardenlab.io
+  description: >-
+    Official documentation of the API of Gardenlab. This API allows customers to
+    manage the NFT of their collection.
+servers:
+  - url: https://demo.gardenlab.io/api/v1
+    description: The sandbox server (uses test data)
+  - url: https://app.gardenlab.io/api/v1
+    description: The production server (uses live data)
+  - url: http://localhost:5001/gardenlab-test/europe-west1
+    description: The emulator server
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    Interaction:
+      type: object
+      additionalProperties: false
+      properties:
+        type:
+          type: string
+          description: The interaction type (the NFT attribute to make an evolution on)
+          example: IRL Event
+        name:
+          type: string
+          description: The interaction name
+          example: Event checkin
+        description:
+          type: string
+          description: The interaction description
+          example: The interaction applied when a user get access to the event
+        xpIncrement:
+          type: number
+          description: >-
+            The default number of XP points to add on the NFT, when applying
+            this interaction
+          example: 5
+        noXp:
+          type: boolean
+          description: Whether the interaction adds XP or just an attribute `type`
+          example: false
+        customXpIncrement:
+          type: boolean
+          description: >-
+            Whether the interaction accepts a custom XP increment (passed in the
+            request parameters)
+          example: false
+        authScanCount:
+          type: number
+          description: >-
+            Number of interactions that can be applied on one NFT. (-1 if
+            infinity)
+          example: 1
+        action_id:
+          type: string
+          description: >-
+            The action id keyword to call this interaction with in the API
+            request
+          example: event_checkin
+      required:
+        - type
+        - name
+    Error:
+      type: object
+      properties:
+        error:
+          type: object
+          properties:
+            status:
+              type: number
+              description: The corresponding HTTP status code
+              example: 123
+            code:
+              type: string
+              description: The error code
+              example: NFT_IS_EXPIRED
+              enum:
+                - QUERY_INCOMPLETE
+                - FORBIDDEN
+                - RESOURCE_NOT_FOUND
+                - MISC_ERROR
+                - MAX_LEVEL_REACHED
+                - INTERACTION_ALREADY_CONSUMED
+                - INTERACTION_NO_LONGER_VALID
+                - INTERACTION_NOT_YET_VALID
+                - NFT_IS_EXPIRED
+            message:
+              type: string
+              description: A more verbose description of the error
+              example: The NFT is expired and cannot be modified
+          required:
+            - status
+            - message
+            - code
+      required:
+        - error
+security:
+  - bearerAuth: []
+paths:
+  /newUserForPartner:
+    post:
+      operationId: newUserForPartner
+      description: >-
+        Notifies Gardenlab that a user has been created in the database. Create
+        and reserve a NFT for the user, if the conditions are respected. The NFT
+        associated to `user_category_id` will be used for this user.
+
+        This endpoint supports body with an array of requests or a single
+        request. The response will be an array or a single body accordingly.
+      requestBody:
+        required: true
+        description: The information about the event and the user to create a NFT for.
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: object
+                properties:
+                  origin:
+                    type: string
+                    description: The partner's name.
+                    example: spacex
+                  email:
+                    type: string
+                    description: >-
+                      The user's email address. The NFT created will be reserved
+                      to this email.
+                  uid:
+                    type: string
+                    description: The user identification.
+                  user_category_id:
+                    type: string
+                    description: The user catagory. This defines which NFT to distribute.
+                    example: VIP
+                  contract_id:
+                    type: string
+                    description: >-
+                      The contract ID associated with a specific
+                      contract/collection/customer (ex: the event ID or
+                      'subscription')
+                    example: summer_party
+                  additional_fields:
+                    type: object
+                    properties:
+                      expiration_date:
+                        type: string
+                        description: >-
+                          A string representing a date, after which the card can
+                          no longer be upgraded applying interactions
+                        example: '2023-09-18T12:34:56.123Z'
+                      max_level:
+                        type: number
+                        description: >-
+                          The maximum level the card can reach. Any interaction
+                          bumping the card level above this value will fail.
+                        example: 15
+                    description: >-
+                      Additionnal fields that can be set for customized
+                      behaviors.
+                required:
+                  - origin
+                  - email
+                  - uid
+                  - user_category_id
+                  - contract_id
+      responses:
+        '200':
+          description: Returns an array of object containing the NFTs created for the user.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  anyOf:
+                    - type: object
+                      properties:
+                        contract:
+                          type: string
+                          description: The NFT's smart contract address.
+                          example: '0x0123456789abcdef0123456789abcdef01234567'
+                        tokenId:
+                          type: string
+                          description: The NFT's token ID.
+                          example: '123'
+                        attributes:
+                          type: object
+                          description: The NFT's attributes object.
+                        url:
+                          type: string
+                          description: The NFT's page URL.
+                        uid:
+                          type: string
+                          description: The ID of the owner of the NFT.
+                        email:
+                          type: string
+                          description: The owner of the NFT's email.
+                    - $ref: '#/components/schemas/Error'
+                  type: string
+        '400':
+          description: The request is not valid or an error occured.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: The API key is missing or incorrect.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: An internal error occured. Please verify the message
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security:
+        - bearerAuth: []
+      tags:
+        - NFT
+  /newActionForUser:
+    post:
+      operationId: newActionForUser
+      description: >-
+        Notifies Gardenlab that a user has performed an action in the partner
+        ecosystem
+      requestBody:
+        required: true
+        description: The information about the action the user performed.
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                origin:
+                  type: string
+                  description: The partner's name.
+                  example: spacex
+                contract_id:
+                  type: string
+                  description: >-
+                    The contract ID associated with a specific
+                    contract/collection/customer (ex: the event ID or
+                    'subscription')
+                  example: summer_party
+                action_id:
+                  type: string
+                  description: The action ID.
+                  example: eshop_purchase
+                xpIncrement:
+                  type: number
+                  description: >-
+                    The XP value to add on the NFT. Applied only if the
+                    interaction allows it.
+                  example: 5
+                guest:
+                  type: object
+                  properties:
+                    email:
+                      type: string
+                      description: The user email address.
+                    uid:
+                      type: string
+                      description: The user ID.
+      responses:
+        '200':
+          description: Returns an object containing the NFT created for the user.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  contract:
+                    type: string
+                    description: The NFT's smart contract address.
+                    example: '0x0123456789abcdef0123456789abcdef01234567'
+                  tokenId:
+                    type: string
+                    description: The NFT token ID.
+                    example: '123'
+                  attributes:
+                    type: object
+                    description: The NFT attributes.
+                  url:
+                    type: string
+                    description: The NFT page URL.
+                  uid:
+                    type: string
+                    description: The owner User ID.
+                  email:
+                    type: string
+                    description: The owner email address.
+        '400':
+          description: The request is malformed. Please verify the content of the body.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: The API key is missing or incorrect.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: An internal error occured. Check the error message.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      tags:
+        - Interaction
+      security:
+        - bearerAuth: []
+  /saveActionInteraction:
+    post:
+      operationId: saveActionInteraction
+      description: >-
+        Create or update a new interaction and specify the action_id to use to
+        apply the interaction.
+      requestBody:
+        required: true
+        description: The information about the interaction to create or update.
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                origin:
+                  type: string
+                  description: The partner's name.
+                  example: spacex
+                contract_id:
+                  type: string
+                  description: >-
+                    The contract ID associated with a specific
+                    contract/collection/customer (ex: the event ID or
+                    'subscription')
+                  example: summer_party
+                interactionId:
+                  type: string
+                  description: >-
+                    (optional) The interaction ID to edit. Leave empty to
+                    create.
+                  example: 0ER368760G8787238
+                interaction:
+                  $ref: '#/components/schemas/Interaction'
+              required:
+                - origin
+                - contract_id
+                - interaction
+      responses:
+        '200':
+          description: >-
+            Returns an object containing the interaction information along with
+            its id.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  interaction:
+                    $ref: '#/components/schemas/Interaction'
+                  id:
+                    type: string
+                    description: The interaction ID
+                    example: IQ0LuundpiAvnfDcQ21Y
+        '400':
+          description: The request is malformed. Please verify the content of the body.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: The API key is missing or incorrect.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: An internal error occured. Check the error message.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      tags:
+        - Interaction
+      security:
+        - bearerAuth: []
+  /getNftByTokenId:
+    get:
+      operationId: getNftByTokenId
+      description: Retrieve the information on a specific NFT of a contract.
+      parameters:
+        - in: query
+          name: contract
+          schema:
+            type: string
+          description: The contract address of the token.
+        - in: query
+          name: tokenId
+          schema:
+            type: integer
+          description: The token ID
+      responses:
+        '200':
+          description: Returns an object containing the NFT information.
+        '400':
+          description: There is an error in the query.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: The API key is missing or incorrect.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: The specified NFT cannot be found in Gardenlab database.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      tags:
+        - NFT
+      security:
+        - bearerAuth: []
+  /getNft:
+    get:
+      operationId: getNft
+      description: >-
+        Notifies Gardenlab that a user has performed an action in the partner
+        ecosystem
+      parameters:
+        - in: query
+          name: offset
+          schema:
+            type: integer
+          description: >-
+            The number of items to skip before starting to collect the result
+            set
+        - in: query
+          name: limit
+          schema:
+            type: integer
+          description: The numbers of items to return
+      responses:
+        '200':
+          description: Returns an object containing the NFT created for the user.
+      tags:
+        - NFT
+      security:
+        - bearerAuth: []
+  /getAllInteractions:
+    get:
+      operationId: getAllInteractions
+      description: Retrieve all the interactions for a contract.
+      parameters:
+        - in: query
+          name: origin
+          description: The partner's name.
+          example: spacex
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: contract
+          description: The contract for which to retrieve the interactions
+          example: '0x0123456789abcdef0123456789abcdef01234567'
+          schema:
+            type: string
+        - in: query
+          name: contract_id
+          description: >-
+            The contract ID associated with a specific
+            contract/collection/customer (ex: the event ID or 'subscription')
+          example: summer_party
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Returns a list with all the interactions
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Interaction'
+        '400':
+          description: There is an error in the query.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: The API key is missing or incorrect.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: An internal error occured. Check the error message.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      tags:
+        - Interaction
+      security:
+        - bearerAuth: []
+  /getAllInteractionScansForToken:
+    get:
+      operationId: getAllInteractionScansForToken
+      description: Getting all the actions applied on a NFT
+      parameters:
+        - in: query
+          name: origin
+          description: The partner's name.
+          example: spacex
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: tokenId
+          description: The token ID to fetch the interactions for
+          example: '123'
+          schema:
+            type: string
+          required: true
+        - in: query
+          name: contract
+          description: The contract for which to retrieve the interactions
+          example: '0x0123456789abcdef0123456789abcdef01234567'
+          schema:
+            type: string
+        - in: query
+          name: contract_id
+          description: >-
+            The contract ID associated with a specific
+            contract/collection/customer (ex: the event ID or 'subscription')
+          example: summer_party
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Returns a list with all the interactions
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    at:
+                      type: object
+                      properties:
+                        _seconds:
+                          type: number
+                          description: Seconds
+                        _nanoseconds:
+                          type: number
+                          description: Nanoseconds
+                      required:
+                        - _seconds
+                        - _nanoseconds
+                      description: Date at which the interaction occured
+                    xpBefore:
+                      type: number
+                      description: XP before the interaction
+                    xpAfter:
+                      type: number
+                      description: XP after the interaction
+                    lvlBefore:
+                      type: number
+                      description: Level before the interaction
+                    lvlAfter:
+                      type: number
+                      description: Level after the interaction
+                    maxLvlReached:
+                      type: boolean
+                      description: Flag indicating the max level has been reached
+                    interactionName:
+                      type: string
+                      description: The name of the interaction
+                    type:
+                      type: string
+                      description: The type of the interaction (attribute name)
+                  required:
+                    - at
+                    - xpBefore
+                    - xpAfter
+                    - lvlBefore
+                    - lvlAfter
+                    - maxLvlReached
+                    - interactionName
+                    - type
+                  description: The interaction details
+                description: A list of the interactions
+        '400':
+          description: There is an error in the query.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: The API key is missing or incorrect.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: An internal error occured. Check the error message.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      tags:
+        - Interaction
+      security:
+        - bearerAuth: []
+externalDocs:
+  url: https://docs.gardenlab.io/api
+tags:
+  - name: NFT
+    description: ''
+    externalDocs:
+      description: ''
+      url: ''
+  - name: Interaction
+    description: ''
+    externalDocs:
+      description: ''
+      url: ''
