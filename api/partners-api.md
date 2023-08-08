@@ -15,6 +15,8 @@ For now, the API allows partners to trigger NFT creation and reservation for lat
 
 An API key and a configured collection are required to properly perform those actions.
 
+Swagger demo API : [https://api-docs-demo.gardenlab.io/](https://api-docs-demo.gardenlab.io/)&#x20;
+
 ## Description
 
 ### Configuration
