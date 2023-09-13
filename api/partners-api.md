@@ -58,3 +58,7 @@ Swagger demo API : [https://api-docs-demo.gardenlab.io/](https://api-docs-demo.g
 {% swagger src="../.gitbook/assets/Partner_API.yaml" path="/getAllInteractionScansForToken" method="get" %}
 [Partner_API.yaml](../.gitbook/assets/Partner_API.yaml)
 {% endswagger %}
+
+{% swagger src="../.gitbook/assets/Partner_API (2).yaml" path="/getBlockchainTxForToken" method="get" %}
+[Partner_API (2).yaml](<../.gitbook/assets/Partner_API (2).yaml>)
+{% endswagger %}
