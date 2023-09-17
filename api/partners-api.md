@@ -45,6 +45,12 @@ Swagger demo API : [https://api-docs-demo.gardenlab.io/](https://api-docs-demo.g
 
 **Note**: The action saved for a NFT is applied if the NFT is minted or not.
 
+#### Mint token
+
+{% swagger src="../.gitbook/assets/Partner_API (3).yaml" path="/mintTokenForUser" method="post" %}
+[Partner_API (3).yaml](<../.gitbook/assets/Partner_API (3).yaml>)
+{% endswagger %}
+
 ### Getters
 
 {% swagger src="../.gitbook/assets/Partner_API.yaml" path="/getNftByTokenId" method="get" %}
@@ -62,3 +68,69 @@ Swagger demo API : [https://api-docs-demo.gardenlab.io/](https://api-docs-demo.g
 {% swagger src="../.gitbook/assets/Partner_API (2).yaml" path="/getBlockchainTxForToken" method="get" %}
 [Partner_API (2).yaml](<../.gitbook/assets/Partner_API (2).yaml>)
 {% endswagger %}
+
+
+
+## Webhooks
+
+It is also possible to set up webhooks to get notified about some specific events occuring in Gardenlab:
+
+### New interaction with blockchain update:
+
+#### Type :&#x20;
+
+```typescript
+newBcInteraction
+```
+
+#### Header:
+
+```typescript
+"X-API-key": string // The API key configured by the partner
+```
+
+#### Content:
+
+```javascript
+{
+contract: string, // The contract address
+tokenId: string, // The token ID
+nftTokenId: string, // The token ID
+actionType: string, // The webhook/action type (newBcInteraction)
+actionAtInSeconds: string, // The date of the action in seconds
+transactionUrl: string, // The blockchain explorer page for this transaction
+txHash: string, // The blockchain transaction hash
+at: string, // The date in an object
+newUri: string, // The new URI of the token
+}
+```
+
+### New NFT minted:
+
+#### Type :&#x20;
+
+```typescript
+newBcNftMint
+```
+
+#### Header:
+
+```typescript
+"X-API-key": string // The API key configured by the partner
+```
+
+#### Content:
+
+```javascript
+{
+contract: string, // The contract address
+tokenId: string, // The token ID
+nftTokenId: string, // The token ID
+actionType: string, // The webhook/action type (newBcNftMint)
+actionAtInSeconds: string, // The date of the action in seconds
+transactionUrl: string, // The blockchain explorer page for this transaction
+txHash: string, // The blockchain transaction hash
+at: string, // The date in an object
+}
+```
+
