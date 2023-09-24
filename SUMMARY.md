@@ -23,4 +23,4 @@
 ***
 
 * [Politique de confidentialité](politique-de-confidentialite.md)
-* [Conditions générales d'utilisation](conditions-generales-dutilisation.md)
+* [Conditions générales d'utilisation](conditions-generales-dutilisation-de-gardenlab.md)

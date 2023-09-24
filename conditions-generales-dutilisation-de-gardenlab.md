@@ -10,7 +10,7 @@ L'Utilisateur reconnaît que l'utilisation de la Plateforme nécessite qu'il soi
 
 Toute utilisation de la Plateforme implique la consultation et l'acceptation des présentes Conditions.
 
-Lors de chaque visite sur le Site, vous devez prendre connaissance des éventuelles modifications apportées aux présentes Conditions, Gardenlab se réservant le droit de les modifier à tout moment.
+Lors de chaque visite sur la Plateforme, vous devez prendre connaissance des éventuelles modifications apportées aux présentes Conditions, Gardenlab se réservant le droit de les modifier à tout moment.
 
 Les présentes Conditions ne sont pas des conditions générales de vente ou des conditions générales de prestation de services.
 
