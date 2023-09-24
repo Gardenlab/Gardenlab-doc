@@ -1,6 +1,24 @@
-# Conditions générales d'utilisation de Gardenlab
+# Conditions générales d'utilisation
 
-## Conditions générales d'utilisation de Gardenlab
+## CONDITIONS GÉNÉRALES D’UTILISATION
+
+Les conditions générales d'utilisation sont conclues entre Gardenlab SAS, société située au [35 LOT LA JOIE DE VIVRE 06150 CANNES](https://www.societe.com/entreprises/35\_lot%20la%20joie%20de%20vivre/06150\_CANNES.html), immatriculée sous le numéro 910685205, et l'Utilisateur.
+
+Tout Utilisateur qui souhaite utiliser la Plateforme : [https://app.gardenlab.io](https://app.gardenlab.io) (ci-après, la " Plateforme ") est réputé avoir pris connaissance des présentes conditions générales d'utilisation;
+
+L'Utilisateur reconnaît que l'utilisation de la Plateforme nécessite qu'il soit âgé de dix-huit ans révolus et qu'il se conforme à l'ensemble des dispositions définies aux présentes.
+
+Toute utilisation de la Plateforme implique la consultation et l'acceptation des présentes Conditions.
+
+Lors de chaque visite sur le Site, vous devez prendre connaissance des éventuelles modifications apportées aux présentes Conditions, Gardenlab se réservant le droit de les modifier à tout moment.
+
+Les présentes Conditions ne sont pas des conditions générales de vente ou des conditions générales de prestation de services.
+
+Elles sont destinées à constituer la règle que tout Utilisateur visitant la Plateforme doit respecter.
+
+Dernière mise à jour le 24 Septembre 2023
+
+## Préambule
 
 Les présentes conditions générales d'utilisation ("CGU") de Gardenlab ("la Société") régissent l'accès et l'utilisation par les utilisateurs des divers produits, services et espaces proposés notamment pour visualiser, explorer, créer, déployer, vendre, intégrer des NFT et autres actifs numériques (les "Services") mis à disposition via le site web, les applications mobiles (le cas échéant) et la plateforme (ensemble dénommée la "Plateforme").
 
@@ -241,5 +259,3 @@ La société se réserve le droit, à sa seule discrétion, de modifier, suspend
 En cas de résiliation du compte utilisateur, la société s'efforcera de contacter l'utilisateur pour récupérer sa clé privée et supprimer ses cryptoactifs, sauf si la loi l'interdit. Si le contact est impossible, le portefeuille de l'utilisateur pourra rester inactif.
 
 Sauf disposition contraire, les présentes CGU ont pour seul objet de définir les droits et obligations de la société et de l'utilisateur.
-
-'Gardenlab' est une société SAS sous le numéro 910685205.
