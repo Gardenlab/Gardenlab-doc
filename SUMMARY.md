@@ -19,3 +19,7 @@
 ## 👨💻 API
 
 * [Partners API](api/partners-api.md)
+
+***
+
+* [Politique de confidentialité](politique-de-confidentialite.md)
