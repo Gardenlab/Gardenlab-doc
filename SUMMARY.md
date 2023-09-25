@@ -16,12 +16,12 @@
 * [🛒 Centres Commerciaux](use-cases/centre-commerciaux.md)
 * [🏨 Clubs vacances (hôtels,campings)](use-cases/clubs-vacances-hotels-campings.md)
 
-## 👨💻 API
+## 👨💻 API&#x20;
 
 * [Partners API](api/partners-api.md)
 
-***
+## ⚖ Notices Légales
 
-* [Politique de confidentialité](politique-de-confidentialite.md)
-* [Conditions générales d'utilisation](conditions-generales-dutilisation-de-gardenlab.md)
-* [Mentions Légales](mentions-legales.md)
+* [Politique de confidentialité](notices-legales/politique-de-confidentialite.md)
+* [Conditions générales d'utilisation](notices-legales/conditions-generales-dutilisation.md)
+* [Mentions Légales](notices-legales/mentions-legales.md)
