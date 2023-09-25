@@ -95,12 +95,12 @@ newBcInteraction
 {
 contract: string, // The contract address
 tokenId: string, // The token ID
-nftTokenId: string, // The token ID
+nftTokenId: number, // The token ID
 actionType: string, // The webhook/action type (newBcInteraction)
 actionAtInSeconds: string, // The date of the action in seconds
 transactionUrl: string, // The blockchain explorer page for this transaction
 txHash: string, // The blockchain transaction hash
-at: string, // The date in an object
+at: any, // The date in an object
 newUri: string, // The new URI of the token
 }
 ```
@@ -125,12 +125,12 @@ newBcNftMint
 {
 contract: string, // The contract address
 tokenId: string, // The token ID
-nftTokenId: string, // The token ID
+nftTokenId: number, // The token ID
 actionType: string, // The webhook/action type (newBcNftMint)
 actionAtInSeconds: string, // The date of the action in seconds
 transactionUrl: string, // The blockchain explorer page for this transaction
 txHash: string, // The blockchain transaction hash
-at: string, // The date in an object
+at: any, // The date in an object
 }
 ```
 
