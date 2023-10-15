@@ -73,7 +73,9 @@ Swagger demo API : [https://api-docs-demo.gardenlab.io/](https://api-docs-demo.g
 
 ## Webhooks
 
-It is also possible to set up webhooks to get notified about some specific events occuring in Gardenlab:
+It is also possible to set up webhooks to get notified about some specific events occuring in Gardenlab.
+
+The failure object is sent only when there is no "hope" about succeeding in performing the blockchain transactions. Gardenlab system is designed to try multiple times to perform a transaction if no fatal error occurs on the transaction.
 
 ### New interaction with blockchain update:
 
@@ -89,21 +91,37 @@ newBcInteraction
 "X-API-key": string // The API key configured by the partner
 ```
 
-#### Content:
+#### Success Content:
 
 ```javascript
 {
-contract: string, // The contract address
-tokenId: string, // The token ID
-nftTokenId: number, // The token ID
-actionType: string, // The webhook/action type (newBcInteraction)
-actionAtInSeconds: string, // The date of the action in seconds
-transactionUrl: string, // The blockchain explorer page for this transaction
-txHash: string, // The blockchain transaction hash
-at: any, // The date in an object
-newUri: string, // The new URI of the token
+    sucess: true,
+    contract: string, // The contract address
+    tokenId: string, // The token ID
+    actionType: string, // The webhook/action type (newBcInteraction)
+    actionAtInSeconds: string, // The date of the action in seconds
+    at: {"_seconds": number, "_nanoseconds": number}, // The date in an object
+    transactionUrl: string, // The blockchain explorer page for this transaction
+    txHash: string, // The blockchain transaction hash
+    newUri: string, // The new URI of the token
 }
 ```
+
+#### &#x20;Failure Content:
+
+```javascript
+{
+    sucess: false,
+    error: string,
+    contract: string, // The contract address
+    tokenId: string, // The token ID
+    actionType: string, // The webhook/action type (newBcInteraction)
+    actionAtInSeconds: string, // The date of the action in seconds
+    at: {"_seconds": number, "_nanoseconds": number}, // The date in an object
+}
+```
+
+###
 
 ### New NFT minted:
 
@@ -119,18 +137,29 @@ newBcNftMint
 "X-API-key": string // The API key configured by the partner
 ```
 
-#### Content:
+#### Success content:
 
 ```javascript
 {
-contract: string, // The contract address
-tokenId: string, // The token ID
-nftTokenId: number, // The token ID
-actionType: string, // The webhook/action type (newBcNftMint)
-actionAtInSeconds: string, // The date of the action in seconds
-transactionUrl: string, // The blockchain explorer page for this transaction
-txHash: string, // The blockchain transaction hash
-at: any, // The date in an object
+    success: true,
+    contract: string, // The contract address
+    tokenId: string, // The token ID
+    actionType: string, // The webhook/action type (newBcNftMint)
+    at: {"_seconds": number, "_nanoseconds": number}, // The date in an object
+    transactionUrl: string, // The blockchain explorer page for this transaction
+    txHash: string, // The blockchain transaction hash
 }
 ```
 
+#### Failure content:
+
+```javascript
+{
+    success: false,
+    error: string, // The error message
+    contract: string, // The contract address
+    tokenId: string, // The token ID
+    actionType: string, // The webhook/action type (newBcNftMint)
+    at: {"_seconds": number, "_nanoseconds": number}, // The date in an object
+}
+```
