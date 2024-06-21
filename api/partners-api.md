@@ -31,8 +31,8 @@ Swagger demo API : [https://api-docs-demo.gardenlab.io/](https://api-docs-demo.g
 
 #### User creation
 
-{% swagger src="../.gitbook/assets/Partner_API.yaml" path="/newUserForPartner" method="post" %}
-[Partner_API.yaml](../.gitbook/assets/Partner_API.yaml)
+{% swagger src="../.gitbook/assets/Partner_API (4).yaml" path="/newUserForPartner" method="post" %}
+[Partner_API (4).yaml](<../.gitbook/assets/Partner_API (4).yaml>)
 {% endswagger %}
 
 **Note**: When creating a NFT for a user, this NFT is prepared but not minted. The mint of the NFT occurs when the user claims it using the email address.
@@ -47,7 +47,7 @@ Swagger demo API : [https://api-docs-demo.gardenlab.io/](https://api-docs-demo.g
 
 #### Mint token
 
-{% swagger src="../.gitbook/assets/Partner_API (4).yaml" path="/newUserForPartner" method="post" %}
+{% swagger src="../.gitbook/assets/Partner_API (4).yaml" path="/mintTokenForUser" method="post" %}
 [Partner_API (4).yaml](<../.gitbook/assets/Partner_API (4).yaml>)
 {% endswagger %}
 
@@ -123,7 +123,7 @@ newBcInteraction
 
 ###
 
-### New NFT minted:
+### New NFT minted
 
 #### Type :&#x20;
 
