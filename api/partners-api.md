@@ -47,8 +47,8 @@ Swagger demo API : [https://api-docs-demo.gardenlab.io/](https://api-docs-demo.g
 
 #### Mint token
 
-{% swagger src="../.gitbook/assets/Partner_API (3).yaml" path="/mintTokenForUser" method="post" %}
-[Partner_API (3).yaml](<../.gitbook/assets/Partner_API (3).yaml>)
+{% swagger src="../.gitbook/assets/Partner_API (4).yaml" path="/newUserForPartner" method="post" %}
+[Partner_API (4).yaml](<../.gitbook/assets/Partner_API (4).yaml>)
 {% endswagger %}
 
 ### Getters

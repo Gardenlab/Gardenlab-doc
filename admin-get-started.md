@@ -60,7 +60,7 @@ L'utilisation de Gardenlab signifie également un accès facile et rapide aux st
 
 [#view-collection-statistics-scans-and-interactions](admin-get-started.md#view-collection-statistics-scans-and-interactions "mention")
 
-
+***
 
 ## Videos tutoriel
 

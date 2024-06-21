@@ -16,11 +16,11 @@
 * [🛒 Centres Commerciaux](use-cases/centre-commerciaux.md)
 * [🏨 Clubs vacances (hôtels,campings)](use-cases/clubs-vacances-hotels-campings.md)
 
-## 👨💻 API&#x20;
+## 👨‍💻 API&#x20;
 
 * [Partners API](api/partners-api.md)
 
-## ⚖ Notices Légales
+## ⚖️ Notices Légales
 
 * [Politique de confidentialité](notices-legales/politique-de-confidentialite.md)
 * [Conditions générales d'utilisation](notices-legales/conditions-generales-dutilisation.md)
